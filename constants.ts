@@ -4,7 +4,7 @@ export const BUSINESS_INFO = {
   tagline: "Renewable Energy Solutions",
   scope: "Solar | Wind | Hybrid Energy Systems",
   phone1: "9604437523",
-  phone2: "7249041132",
+  phone2: "7249041134",
   email: "sahilsaste2304@gmail.com",
   address: "Parijat Society Shribag, Alibag, Maharashtra, India",
   serviceArea: "Serving all over Maharashtra",
