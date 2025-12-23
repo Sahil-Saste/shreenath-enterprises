@@ -2,28 +2,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronRight, Zap, Landmark, CheckCircle2 } from 'lucide-react';
-import { SUBSIDY_INFO, BUSINESS_INFO } from '../constants';
+import { SUBSIDY_INFO } from '../constants';
 
 const Services = () => {
   const serviceCategories = [
     {
       title: "Residential Solar",
-      tagline: "Cut Bills by 90%",
-      image: "https://images.unsplash.com/photo-1611367540803-0c3bc904af34?auto=format&fit=crop&q=80&w=1200",
-      description: "Smart, aesthetic rooftop installations for homes that pay for themselves within 3-4 years.",
-      points: ["Full Subsidy Assistance", "Quick 3-Day Installation", "Net Metering Handling"]
+      tagline: "Cut Bills by 100%",
+      image: "https://images.unsplash.com/photo-1594818379496-da1e345b0ded?auto=format&fit=crop&q=80&w=1200",
+      description: "Smart, aesthetic rooftop installations for homes that pay for themselves within  years.",
+      points: ["Full Subsidy Assistance", "Quick Installation", "Net Metering Handling"]
     },
     {
       title: "Commercial Solar",
       tagline: "Smart Business Asset",
-      image: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e2?auto=format&fit=crop&q=80&w=1200",
+      image: "https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&q=80&w=1200",
       description: "Scale your business with zero-maintenance power plants that lower operational costs significantly.",
       points: ["Tax (AD) Benefits", "High Durability Structures", "Performance Monitoring"]
     },
     {
       title: "Industrial & Utility",
       tagline: "Large-Scale EPC",
-      image: "https://unsplash.com/photos/an-aerial-view-of-a-large-solar-farm-hYfOeNvDXWg",
+      image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=1200",
       description: "Mega-scale power solutions for factories and land-based projects with robust structural engineering.",
       points: ["Heavy Load Management", "MW-Scale Experience", "Grid Integration"]
     }
@@ -42,7 +42,7 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Residential Subsidy Spotlight - Image Removed and Content Centered */}
+      {/* Residential Subsidy Spotlight */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-green-50 rounded-[3rem] p-10 md:p-16 flex flex-col items-center text-center border border-green-100 shadow-sm">
@@ -75,12 +75,15 @@ const Services = () => {
             {serviceCategories.map((service, idx) => (
               <div key={idx} className="group flex flex-col h-full">
                 {/* Image Container */}
-                <div className="aspect-[16/11] overflow-hidden rounded-[2.5rem] mb-8 relative shadow-xl bg-slate-100">
+                <div className="aspect-[16/11] min-h-[250px] overflow-hidden rounded-[2.5rem] mb-8 relative shadow-xl bg-slate-200 border border-slate-200">
                   <img 
                     src={service.image} 
                     alt={service.title} 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
-                    loading="lazy"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 block"
+                    loading="eager"
+                    onError={(e) => {
+                      e.currentTarget.src = "https://images.unsplash.com/photo-1558444479-27c49742a11e?auto=format&fit=crop&q=80&w=800";
+                    }}
                   />
                   <div className="absolute top-6 left-6">
                     <span className="bg-white/95 backdrop-blur-md px-4 py-2 rounded-full text-[10px] font-black text-green-700 uppercase tracking-widest shadow-xl border border-white/50">

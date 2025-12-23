@@ -57,7 +57,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Residential Section - Modern House Image Restored */}
+      {/* Residential Section - Updated with a very clear house and panel image */}
       <section className="py-24 md:py-32 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
@@ -66,9 +66,12 @@ const Home = () => {
               <div className="relative group">
                 <div className="absolute -inset-4 bg-green-600/5 rounded-[3rem] rotate-3 group-hover:rotate-0 transition-transform duration-700"></div>
                 <img 
-                  src="https://unsplash.com/photos/a-house-with-a-solar-panel-on-the-roof-OiPtLN9_04w" 
-                  alt="Modern house with solar rooftop panels" 
+                  src="https://images.unsplash.com/photo-1594818379496-da1e345b0ded?auto=format&fit=crop&q=80&w=1200" 
+                  alt="House with clearly visible rooftop solar panels" 
                   className="relative rounded-[2.5rem] shadow-2xl z-10 w-full h-[550px] object-cover border-8 border-white"
+                  onError={(e) => {
+                    e.currentTarget.src = "https://images.unsplash.com/photo-1558444479-27c49742a11e?auto=format&fit=crop&q=80&w=1200";
+                  }}
                 />
               </div>
             </div>
@@ -78,7 +81,7 @@ const Home = () => {
                 Empower Your <span className="text-green-600 underline decoration-green-200 underline-offset-8">Home</span> With Solar
               </h2>
               <p className="text-slate-600 text-xl mb-10 leading-relaxed">
-                Slash your monthly electricity bills by up to 90%. We provide premium monocrystalline panels that generate more power even in low light conditions.
+                Slash your monthly electricity bills by up to 100%. We provide premium monocrystalline panels that generate more power even in low light conditions.
               </p>
               
               <div className="bg-slate-900 text-white rounded-[2.5rem] p-8 md:p-10 mb-10 shadow-2xl relative overflow-hidden">

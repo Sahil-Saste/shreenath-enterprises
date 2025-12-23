@@ -45,11 +45,10 @@ const Navbar = () => {
     <nav className="bg-white sticky top-0 z-50 border-b border-gray-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <Link to="/" className="flex items-center space-x-2 group">
-            <Logo className="h-12 w-12 group-hover:scale-105 transition-transform duration-300" />
+          <Link to="/" className="flex items-center group">
             <div className="flex flex-col">
-              <span className="text-lg font-extrabold text-slate-900 tracking-tight leading-none uppercase">SHREENATH</span>
-              <span className="text-[10px] font-bold text-green-600 tracking-[0.2em] uppercase">Enterprises</span>
+              <span className="text-2xl font-black text-slate-900 tracking-tighter leading-none uppercase">SHREENATH</span>
+              <span className="text-[11px] font-bold text-green-600 tracking-[0.25em] uppercase mt-0.5">Enterprises</span>
             </div>
           </Link>
           
@@ -116,7 +115,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-6">
               <Logo className="h-10 w-10 bg-white rounded-lg p-0.5" />
-              <span className="text-xl font-extrabold uppercase tracking-tighter">SHREENATH</span>
+              <span className="text-xl font-extrabold uppercase tracking-tighter">SHREENATH ENTERPRISES</span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed mb-6">
               {BUSINESS_INFO.tagline} in Alibag and across Maharashtra.
