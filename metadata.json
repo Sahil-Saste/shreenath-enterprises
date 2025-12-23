@@ -1,0 +1,7 @@
+{
+  "name": "Shreenath Enterprises - Solar Solutions",
+  "description": "Premium Solar EPC and Installation services in Alibag, Maharashtra. Expert residential, commercial, and industrial solar projects with government subsidy support.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
