@@ -5,7 +5,11 @@ export const BUSINESS_INFO = {
   scope: "Solar | Wind | Hybrid Energy Systems",
   phone1: "9604437523",
   phone2: "7249041134",
+<<<<<<< HEAD
   email: "shreenathenterprises61@gmail.com",
+=======
+  email: "sahilsaste2304@gmail.com",
+>>>>>>> b0c914959baefa724e755ba61ee11ea79f8d5985
   address: "Parijat Society Shribag, Alibag, Maharashtra, India",
   serviceArea: "Serving all over Maharashtra",
   whatsappLink: "https://wa.me/919604437523",
